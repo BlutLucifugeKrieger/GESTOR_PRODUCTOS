@@ -54,7 +54,7 @@ ______________________________________________________________
 
 ___________________________________________________________________
 
-**Instalacion y configuracion del respositorio**
+## Instalacion y configuracion del respositorio ##
 
 **NOTA:** La conexion de la base de datos, en este caso, no la trabaje de forma local, es decir, 
           gracias a una licencia que poseo, desplegue un servidor en la nube de AZURE, y alli, una base de datos MYSQL.
@@ -67,7 +67,7 @@ En primer lugar, deberas clonar el repositorio a traves del comando: "git clone 
 una vez lo hayas hecho, deberas mover la carpeta del repositorio al directorio de trabajo este variara si empleas XAMPP o WAMPSERVER.
 
 * **FASE 2:**  APERTURA DEL PROYECTO EN EL IDE DE TU PREFERENCIA
-* 
+  
 En segundo lugar, tendras que abrir el proyecto usando un IDE, en mi caso recomiento Visual Studio Code.
 
 * **FASE 3:** EJECUCION DE LA API DESARROLLADA EN PHP

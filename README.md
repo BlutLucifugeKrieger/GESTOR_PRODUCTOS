@@ -87,43 +87,56 @@ de este modo tendras acceso a cada uno de los endpoints.
   **ENDPONITS DE PRODUCTOS**
   
   
-  **Todos los productos: (GET)** - http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
+  **Todos los productos: (GET)** -
+  http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
   
   
-  **Actualizar un producto: (PUT)** - http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
+  **Actualizar un producto: (PUT)** -
+  http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
   
   
-  **Comprar un producto: (POST)**  - http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
+  **Comprar un producto: (POST)**  -
+  http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
   
   
-  **Eliminar un producto: (DELETE)** - http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
+  **Eliminar un producto: (DELETE)** -
+   http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
 _____________________________________________________________________________________________________________________
 
   **ENDPOINTS DE USUARIOS**
   
 
-  **Todos los usuarios:(GET)** - http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
+  **Todos los usuarios:(GET)** - 
+  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
   
   
-  **Nuevo usuario: (POST)** - http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
+  **Nuevo usuario: (POST)** - 
+  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
   
   
-  **Actualizar un usuario: (PUT)** - http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
+  **Actualizar un usuario: (PUT)** - 
+  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
   
   
-  **Eliminar un usuario: (DELETE)** - http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
+  **Eliminar un usuario: (DELETE)** - 
+  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
   
   
-  **Inicio de sesion: (POST)** - http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/userLogin
+  **Inicio de sesion: (POST)** - 
+  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/userLogin
   
 
-  **Todos los productos comprados por los usuarios:(GET)** - http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
+  **Todos los productos comprados por los usuarios:(GET)** - 
+  http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
   
-  **Actualizar dinero: (PUT)** - http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/money
+  **Actualizar dinero: (PUT)** - 
+  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/money
   
-  **Dinero actual: (POST)** - http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/money
+  **Dinero actual: (POST)** - 
+  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/money
   
-  **Busqueda de usuario por ID: (POST)** - http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php/allFromID
+  **Busqueda de usuario por ID: (POST)** - 
+  http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php/allFromID
 
 _______________________________________________________________________________________________________________________
 

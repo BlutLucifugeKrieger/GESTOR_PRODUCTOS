@@ -88,18 +88,25 @@ de este modo tendras acceso a cada uno de los endpoints.
   
   
   **Todos los productos: (GET)** -
+  
   http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
   
   
   **Actualizar un producto: (PUT)** -
+
+
   http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
   
   
   **Comprar un producto: (POST)**  -
+
+
   http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
   
   
   **Eliminar un producto: (DELETE)** -
+
+
    http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
 _____________________________________________________________________________________________________________________
 
@@ -107,18 +114,22 @@ ________________________________________________________________________________
   
 
   **Todos los usuarios:(GET)** - 
+  
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
   
   
   **Nuevo usuario: (POST)** - 
+  
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
   
   
   **Actualizar un usuario: (PUT)** - 
+  
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
   
   
   **Eliminar un usuario: (DELETE)** - 
+  
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
   
   
@@ -127,15 +138,19 @@ ________________________________________________________________________________
   
 
   **Todos los productos comprados por los usuarios:(GET)** - 
+  
   http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
   
   **Actualizar dinero: (PUT)** - 
+  
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/money
   
   **Dinero actual: (POST)** - 
+  
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/money
   
   **Busqueda de usuario por ID: (POST)** - 
+  
   http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php/allFromID
 
 _______________________________________________________________________________________________________________________

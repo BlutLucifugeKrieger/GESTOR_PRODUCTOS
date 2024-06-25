@@ -79,29 +79,40 @@ de este modo tendras acceso a cada uno de los endpoints.
 * **FASE 4:** IDENTIFICACION DE LOS ENDPOINTS
 
   En mi caso en particular, los endpoits quedaron de la siguiente manera:
+  
 
   **ENDPONITS DE PRODUCTOS**
   
+  
   **Todos los productos: (GET)** - http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
+  
   
   **Actualizar un producto: (PUT)** - http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
   
+  
   **Comprar un producto: (POST)**  - http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
+  
   
   **Eliminar un producto: (DELETE)** - http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
 _____________________________________________________________________________________________________________________
 
   **ENDPOINTS DE USUARIOS**
+  
 
   **Todos los usuarios:(GET)** - http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
   
+  
   **Nuevo usuario: (POST)** - http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
+  
   
   **Actualizar un usuario: (PUT)** - http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
   
+  
   **Eliminar un usuario: (DELETE)** - http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
   
+  
   **Inicio de sesion: (POST)** - http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/userLogin
+  
 
   **Todos los productos comprados por los usuarios:(GET)** - http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
   
@@ -146,4 +157,4 @@ ________________________________________________________________________________
 
 **ANEXOS**
 
-**VIDEO INSTALACION**
+**VIDEO INSTALACION Y CONFIGURACION DEL REPOSITORIO**

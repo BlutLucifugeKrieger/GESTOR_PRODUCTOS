@@ -115,7 +115,7 @@ _____________________________________________________________________________
    http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
 _____________________________________________________________________________________________________________________
 
-  **ENDPOINTS DE USUARIOS**
+  ## ENDPOINTS DE USUARIOS ##
   
 
   **Todos los usuarios:(GET)** - 

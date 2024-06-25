@@ -134,14 +134,18 @@ ________________________________________________________________________________
   
   
   **Inicio de sesion: (POST)** - 
+
+  
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/userLogin
   
 
   **Todos los productos comprados por los usuarios:(GET)** - 
   
+  
   http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
   
   **Actualizar dinero: (PUT)** - 
+  
   
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/money
   

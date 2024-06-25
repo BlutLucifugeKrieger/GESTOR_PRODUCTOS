@@ -137,10 +137,13 @@ ________________________________________________________________________________
 
 **CONCLUSIONES**
 
+* En lo personal siento que fue una prueba muy interesante y permite que vuelvas a los origenes de la programacion
+  para intentar algo cotidiano, pero sin todas las comodidades que suelen tener los frameworks.
 
+* Tambien presente algunos pequeños problemas alfinal, sin embargo, logre avanzar en un buen tiempo. 
 
 ______________________________________________________________________________________________________________________________
 
 **ANEXOS**
 
-
+**VIDEO INSTALACION**

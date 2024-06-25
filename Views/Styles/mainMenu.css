@@ -1,0 +1,60 @@
+
+
+.c_body{
+
+    background-color: black;
+}
+
+.products{
+
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+
+.transparent-card {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #fff; 
+    border: none; 
+}
+
+
+.transparent-card .card-header {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+}
+
+.transparent-card .card-body {
+    
+}
+
+.products{
+
+    margin-top: 1000px;
+}
+
+
+.saldo_a{
+
+    justify-content: center;
+	align-items: center;
+
+}
+
+
+.modal-body {
+    background: linear-gradient(135deg, rgba(231, 228, 228, 0.503), rgb(237, 230, 230));
+}
+
+.modal-header {
+    background: linear-gradient(135deg, rgba(197, 194, 194, 0.503), rgb(228, 222, 222));
+}
+
+.modal-footer {
+    background-color: rgba(218, 206, 206, 0.948); 
+}

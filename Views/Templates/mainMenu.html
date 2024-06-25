@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles/mainMenu.css">
+    <title>Main</title>
+</head>
+<body class="c_body">
+    
+    <div>
+
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Bienvenido: <label id="user_name"></label> , Tienda online - Seccion: Compra de productos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Propiedades</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" id="actua">Actualizar cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="saldo_cartera">Cartera</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link"  id="reloadLink">Actualizar cartera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="desconec">Desconectarse</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" id="hyst">Historial</a>
+                      </li>
+                      
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    
+                    
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div>
+                    
+            <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="confirmModalLabel">Confirma la actualizacion de la cartera</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ¿Cuanto deseas actualizar tu saldo? , <br><br>  <label for="saldo_aumentar">Indicalo:</label><div> <input type="number" id="saldo_aumentar" class="saldo_a"> </div>
+                                
+                        
+                           
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" id="confirmReload">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div>
+                    
+                <div class="modal fade" id="carteraModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="confirmModalLabel">Informacion del estado actual</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Saldo actual: <label id="saldo_actual"></label> COP </div> 
+                
+                            
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+                <div>
+
+                    
+            <div>
+                    
+                <div class="modal fade" id="actualizarModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="confirmModalLabel">Actualiza tus datos</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Actualizar informacion de la cuenta 
+
+                                <br>
+                                <br>
+                                <input type="text"  id="nombre_us" placeholder="Usuario">
+                                <br>
+                                <br>
+                                <input type="password" id="Contraseñas" placeholder="Contraseña">
+                                <br>   
+                               
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary" id="actu_botom">Confirmar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <div>
+                    
+                    <div class="modal fade" id="historyModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true" style="padding: auto;">
+                        <div class="modal-dialog modal-lg ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="confirmModalLabel">Historial de compras</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                    <table  id="historyTable" class="table-Secondary table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>ID_ITEMS</th>
+                                                <th>PRECIO</th>
+                                                <th>NOMBRE PRODUCTO</th>
+                                                <th>REFERENCIA</th>
+                                                <th>CATEGORIA</th>
+                                                <th>FECHA VENTA</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody id="t_body">
+                                            
+                                        </tbody>
+                                    </table>
+                                
+                                   
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+        
+                    <div>
+
+
+
+          </div>
+
+          <div class="products">
+            
+          </div>
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="../Scripts/mainMenu.js"></script>
+</body>
+</html>

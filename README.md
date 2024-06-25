@@ -138,7 +138,7 @@ ________________________________________________________________________________
   Posteiormente, podras acceder con una cuenta que te hayas creado, y exploraras el menu principal, el cual cuenta con algunas caracteristicas.
 
   En primera instancia podras apreciar diferentes productos todos ellos, deplegados como elementos "Card" usando Bootstrap, alli, observaras que podras comprar dichos productos,
-  no obstante, cuando se crea una cuenta esta no tiene dinero, es decir que empieza desde 0 COP, por ese motivo, deberas abril el slide bar, que esta a la derecha y veras varias opciones.
+  y ademas, mediante el el slide bar, que esta a la derecha y veras otras opciones disponibles.
 
   1. Primero -> Podras actualizar tu cuenta mediante unos inputs.
      

@@ -164,7 +164,7 @@ ________________________________________________________________________________
 
 _______________________________________________________________________________________________________________________
 
-* **FASE 5**: EJECUCION DE LA VISTA WEB
+## FASE 5: EJECUCION DE LA VISTA WEB ##
 
   En este caso en particular, te recomiendo que utilices una extension llamada "Live Server" que te permite alojar al app web mientras estas desarrollando,
   como si se tratase en las mecanicas de los frameworks de hoy dia, pero claro, mucho mas basico simplemente el host y ya.
@@ -186,7 +186,7 @@ ________________________________________________________________________________
  
 _______________________________________________________________________________________________________________________________
 
-**CONCLUSIONES**
+## CONCLUSIONES ##
 
 * En lo personal siento que fue una prueba muy interesante y permite que vuelvas a los origenes de la programacion
   para intentar algo cotidiano, pero sin todas las comodidades que suelen tener los frameworks.

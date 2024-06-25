@@ -19,7 +19,7 @@ ______________________________________________________________
 ______________________________________________________________
 
 
-**Planteamiento**
+ # Planteamiento #
 
 Implementar un software para almacenar la información de un inventario de productos,
 este programa debe poder leer, actualizar, borrar y crear productos (CRUD),
@@ -27,7 +27,7 @@ para ello debemos utilizar el paradigma MVC.
 
 ______________________________________________________________
 
-**Seccion Opcional**
+# Seccion Opcional # 
 
 sobre el mismo proyecto crear una base de datos de usuarios que permita una acción para compra de producto, 
 el cual recibirá el id del producto como parámetro y actualizara el campo de stock restando uno al valor actual y la fecha de ultima venta, 
@@ -36,7 +36,7 @@ el cual recibirá el id del producto como parámetro y actualizara el campo de s
 
 ______________________________________________________________
 
-**Metodologia**
+# Metodologia #
 
 
 * Identificar los requerimietos funcionales.

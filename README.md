@@ -60,17 +60,20 @@ ___________________________________________________________________
           gracias a una licencia que poseo, desplegue un servidor en la nube de AZURE, y alli, una base de datos MYSQL.
           Asimismo, configure el servidor para dar acceso desde cualquier IP, asi que no tendrias que configurar ni aplicar scripts para crear bases locales.
           No obstante, en la ultima parte del repositorio, dejo el script que aloja todas las sentencias SQL que aplique. Gracias.
+______________________________________________________________________________________________________
 
-* **FASE 1:** CLONACION Y ADECUACION DE LOS DIRECTORIOS DEL REPOSITORIO
+## FASE 1: CLONACION Y ADECUACION DE LOS DIRECTORIOS DEL REPOSITORIO ##
 
 En primer lugar, deberas clonar el repositorio a traves del comando: "git clone https://github.com/BlutLucifugeKrieger/GESTOR_PRODUCTOS_PHP.git",
 una vez lo hayas hecho, deberas mover la carpeta del repositorio al directorio de trabajo este variara si empleas XAMPP o WAMPSERVER.
+_______________________________________________________________________________________________________
 
-* **FASE 2:**  APERTURA DEL PROYECTO EN EL IDE DE TU PREFERENCIA
+## FASE 2:  APERTURA DEL PROYECTO EN EL IDE DE TU PREFERENCIA ##
   
 En segundo lugar, tendras que abrir el proyecto usando un IDE, en mi caso recomiento Visual Studio Code.
+_____________________________________________________________________________________________________
 
-* **FASE 3:** EJECUCION DE LA API DESARROLLADA EN PHP
+## FASE 3: EJECUCION DE LA API DESARROLLADA EN PHP ##
 
 En tercer lugar, tienes que lanzar tu servidor local ya sea atraves de XAMP o WAMPSERVER, una vez lo hayas hecho, 
 te dirijiras a la ruta o PATH del repositorio que clonaste.
@@ -78,11 +81,13 @@ te dirijiras a la ruta o PATH del repositorio que clonaste.
 En este punto, deberas dirigirte a la seccion o directorio de Controllers , en esta parte, abrirar los tres archivos .php que se encuentran en la carpeta.
 
 de este modo tendras acceso a cada uno de los endpoints.
-
-* **FASE 4:** IDENTIFICACION DE LOS ENDPOINTS
+______________________________________________________________________________________________________                                           
+ 
+ ## FASE 4: IDENTIFICACION DE LOS ENDPOINTS ##
 
   En mi caso en particular, los endpoits quedaron de la siguiente manera:
   
+_____________________________________________________________________________
 
   **ENDPONITS DE PRODUCTOS**
   

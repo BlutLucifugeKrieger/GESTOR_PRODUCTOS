@@ -91,28 +91,66 @@ _____________________________________________________________________________
 
   ## ENDPOINTS DE PRODUCTOS ##
   
-  
+  ______________________________________________________________________________
   **Todos los productos: (GET)** -
   
   http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
   
   
+  _______________________________________________________________________________
+  
   **Actualizar un producto: (PUT)** -
 
 
   http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
-  
+
+ **Body**
+
+ {   
+    
+    "NOMBRE_PRODUCTO":STRING,
+    "REFERENCIA":STRING,
+    "PRECIO":INT,
+    "PESO":INT,
+    "CATEGORIA":STRING,
+    "STOCK":INT,
+    "ID":INT
+}
+
+  ____________________________________________________________________________
   
   **Comprar un producto: (POST)**  -
 
 
   http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
   
+
+  **Body**
+ {    
+    "ID_USUARIO":INT,
+    "ID": INT,
+    "NOMBRE_PRODUCTO": STRING,
+    "REFERENCIA": STRING,
+    "PRECIO": INT,
+    "CATEGORIA": STRING,
+    "STOCK": INT,
+    "DINERO":INT
+ 
+}
+  
+ _______________________________________________________________________________
+
   
   **Eliminar un producto: (DELETE)** -
 
 
    http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
+
+ **Body**
+ {   
+    "ID":INT
+ }
+  
 _____________________________________________________________________________________________________________________
 
   ## ENDPOINTS DE USUARIOS ##
@@ -122,16 +160,36 @@ ________________________________________________________________________________
   
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
   
+  _____________________________________________________________________________
   
   **Nuevo usuario: (POST)** - 
   
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
+
+  **Body**
+
+  {
+    "NOMBRE_USUARIO":STRING,
+    "CONTRASEÑA":STRING
+    
+ }
   
+  ______________________________________________________________________________
   
   **Actualizar un usuario: (PUT)** - 
   
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
-  
+
+ **Body**
+
+ {
+    "NOMBRE_USUARIO":STRING,
+    "CONTRASEÑA":STRING,
+    "DINERO":INT,
+    "ID_USUARIO":INT
+}   
+
+  _______________________________________________________________________________
   
   **Eliminar un usuario: (DELETE)** - 
   

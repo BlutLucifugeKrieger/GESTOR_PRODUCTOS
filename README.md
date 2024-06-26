@@ -247,7 +247,7 @@ ________________________________________________________________________________
 
 ___________________________________________________________________________________
 
-  **Actualizar dinero: (POST)** - 
+  **Actualizar dinero: (PUT)** - 
   
   
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/money

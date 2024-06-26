@@ -33,11 +33,21 @@
     
 }
 
-.products{
-
-    margin-top: 1000px;
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; 
+    padding: 20px; 
+    padding-top: 70PX;
 }
 
+.card {
+    flex: 1 1 calc(25% - 40px); 
+    max-width: 18rem;
+    margin: 20px; 
+}
 
 .saldo_a{
 

@@ -318,6 +318,9 @@ ________________________________________________________________________________
 
 ### VIDEO INSTALACION Y EJECUCION DEL PROYECTO ###
 
+NOTA: Para ejecutar correctamente la app web y que los endpoints consumidos en dicha vista, no te causen inconvenientes,
+deberas renombrar el proyecto clonado, a el nombre de "prueba_tecnica_juanCastro" .
+
 https://www.dropbox.com/scl/fi/kcuj6lj6ijyl867x4snap/Video_ejecucion_prueba_web_camilo.mp4?rlkey=5u3e0yemzhxa75o110xqz6cku&st=z2pm22kk&dl=0
 
 

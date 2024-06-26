@@ -125,8 +125,10 @@ _____________________________________________________________________________
   http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
   
 
-  **Body**
- {    
+**Body**
+
+ {   
+    
     "ID_USUARIO":INT,
     "ID": INT,
     "NOMBRE_PRODUCTO": STRING,
@@ -135,7 +137,6 @@ _____________________________________________________________________________
     "CATEGORIA": STRING,
     "STOCK": INT,
     "DINERO":INT
- 
 }
   
  _______________________________________________________________________________
@@ -147,10 +148,12 @@ _____________________________________________________________________________
    http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
 
  **Body**
- {   
+
+{   
+    
     "ID":INT
- }
-  
+}
+ 
 _____________________________________________________________________________________________________________________
 
   ## ENDPOINTS DE USUARIOS ##
@@ -168,11 +171,11 @@ ________________________________________________________________________________
 
   **Body**
 
-  {
+ {   
+    
     "NOMBRE_USUARIO":STRING,
     "CONTRASEÑA":STRING
-    
- }
+}
   
   ______________________________________________________________________________
   
@@ -181,44 +184,99 @@ ________________________________________________________________________________
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
 
  **Body**
+  
 
- {
+ {   
+    
     "NOMBRE_USUARIO":STRING,
     "CONTRASEÑA":STRING,
     "DINERO":INT,
     "ID_USUARIO":INT
-}   
+}
 
   _______________________________________________________________________________
   
   **Eliminar un usuario: (DELETE)** - 
   
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
+
+   **Body**
   
+
+ {   
+    
+    "ID_USUARIO":INT
+}
+ 
+  ________________________________________________________________________________
   
   **Inicio de sesion: (POST)** - 
 
   
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/userLogin
+
+  **Body**
   
 
+ {   
+    
+    "NOMBRE_USUARIO": STRING,
+    "CONTRASEÑA": STRING
+}
+
+  
+___________________________________________________________________________________
   **Todos los productos comprados por los usuarios:(GET)** - 
   
   
   http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
-  
-  **Actualizar dinero: (PUT)** - 
+
+___________________________________________________________________________________
+
+  **Actualizar dinero: (POST)** - 
   
   
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/money
-  
+
+  **Body**
+
+  {   
+    
+   
+    "ID_USUARIO": INT,
+    "DINERO":INT
+
+ }
+__________________________________________________________________________________
   **Dinero actual: (POST)** - 
   
   http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/money
+
+ **Body**
+
+  {   
+    
+   
+    "ID_USUARIO": INT
+    
+
+ }
+__________________________________________________________________________________
   
   **Busqueda de usuario por ID: (POST)** - 
   
   http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php/allFromID
+
+
+   **Body**
+
+  {   
+    
+   
+    "ID_USUARIO": INT
+    
+
+ }
 
 _______________________________________________________________________________________________________________________
 

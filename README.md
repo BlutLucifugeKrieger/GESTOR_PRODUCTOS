@@ -60,6 +60,7 @@ ___________________________________________________________________
           gracias a una licencia que poseo, desplegue un servidor en la nube de AZURE, y alli, una base de datos MYSQL.
           Asimismo, configure el servidor para dar acceso desde cualquier IP, asi que no tendrias que configurar ni aplicar scripts para crear bases locales.
           No obstante, en la ultima parte del repositorio, dejo el script que aloja todas las sentencias SQL que aplique. Gracias.
+          
 **NOTA:** Para ejecutar correctamente la app web y que los endpoints consumidos en dicha vista, no te causen inconvenientes, 
 deberas renombrar el proyecto clonado, a el nombre de "prueba_tecnica_juanCastro" ; 
 ______________________________________________________________________________________________________

@@ -313,9 +313,9 @@ ________________________________________________________________________________
 
 ## ANEXOS ##
 
-### VIDEO INSTALACION Y CONFIGURACION DEL REPOSITORIO ###
+### VIDEO INSTALACION Y EJECUCION DEL PROYECTO ###
 
-https://drive.google.com/file/d/1eaZI4GHPcKf2bvN33bxZdGquZVO5Nwdm/view?usp=sharing
+
 
 
 ### SCRIPT SQL ###

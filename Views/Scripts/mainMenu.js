@@ -67,6 +67,12 @@ function menu() {
                         <p class="card-text">STOCK: ${product.STOCK} UNIDAD/UNIDADES</p>
                         <p class="card-text">ULTIMA VENTA: ${product.FECHA_ULTIMA_VENTA} </p>
                         <button class="btn btn-primary comprar-but">COMPRAR</button>
+                        <br>
+                        <br>
+                        <button class="btn btn-success actualizar-but">ACTUALIZAR</button>
+                        <br>
+                        <br>
+                        <button class="btn btn-danger eliminar-but">ELIMINAR</button>
                     </div>
                 `;
                 
@@ -75,12 +81,6 @@ function menu() {
                 comprarButton.addEventListener('click', () => {
 
                     var ID_USUARIO = localStorage.getItem("id_usuario");
-                    var ar = {ID_USUARIO};
-                    var jj = JSON.stringify(ar)
-
-
-
-
                         
                         var ID = product.ID;
                         var NOMBRE_PRODUCTO = product.NOMBRE_PRODUCTO; 
@@ -135,12 +135,124 @@ function menu() {
                 });
     
                 productsContainer.appendChild(card);
+
+
+
+
+                const eliminarButton = card.querySelector('.eliminar-but');
+
+                eliminarButton.addEventListener('click',()=>{
+        
+                    var ID = product.ID;
+                    var ar = {ID}
+        
+                    var jss = JSON.stringify(ar);
+        
+                    fetch("http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php",{
+        
+                            method:'DELETE',
+                            body: jss,
+                            headers:{
+                                'Content-Type':'application/json'
+                            }
+        
+        
+                    }).then((data)=>{
+        
+                        return data.json();
+        
+                        }).then((res)=>{
+        
+        
+                            if(res.result === "Producto, eliminado correctamente!!!"){
+        
+                                window.alert("El producto se ha eliminado, de forma exitosa");
+                                window.location.reload();
+        
+                            }else{
+        
+                                window.alert("Error, por favor vuelva a intentarlo");
+        
+                            }
+        
+        
+                        })
+        
+                })
+
+                const actualizarButton = card.querySelector('.actualizar-but');
+                actualizarButton.addEventListener('click',(e)=>{
+
+
+                    e.preventDefault();
+
+                
+                document.getElementById("nombre_producto2").value = product.NOMBRE_PRODUCTO;
+                document.getElementById("referencia_producto2").value = product.REFERENCIA;
+                document.getElementById("precio_producto2").value = product.PRECIO;
+                document.getElementById("peso_producto2").value = product.PESO;
+                document.getElementById("categoria_producto2").value = product.CATEGORIA;
+                document.getElementById("stock_producto2").value = product.STOCK;
+
+                
+                window.currentProductId = product.ID;
+
+               
+                const myModal = new bootstrap.Modal(document.getElementById('actuProductModal'), {
+                    keyboard: false
+                });
+                myModal.show();
+                })
+
+
+                
+        
             });
+
+
+            document.getElementById("actuproduct_botom").addEventListener("click", () => {
+                var NOMBRE_PRODUCTO = document.getElementById("nombre_producto2").value;
+                var REFERENCIA = document.getElementById("referencia_producto2").value;
+                var PRECIO = document.getElementById("precio_producto2").value;
+                var PESO = document.getElementById("peso_producto2").value;
+                var CATEGORIA = document.getElementById("categoria_producto2").value;
+                var STOCK = document.getElementById("stock_producto2").value;
+                var ID = window.currentProductId; 
+            
+                var array = { NOMBRE_PRODUCTO, REFERENCIA, PRECIO, PESO, CATEGORIA, STOCK, ID };
+                var js = JSON.stringify(array);
+            
+                fetch("http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php", {
+                    method: 'PUT',
+                    body: js,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then((data) => {
+                    return data.json();
+                }).then((res) => {
+                    if (res.result === "Producto actualizado correctamente") {
+                        window.alert("Producto actualizado correctamente");
+                        window.location.href = "../Templates/mainMenu.html";
+                    } else {
+                        window.alert("Por favor, rellene todos los campos");
+                    }
+                });
+            });
+       
+
+
         })
         .catch(error => {
             console.error('Error al obtener productos:', error);
         });
+
+
+
+        
 })
+
+
 
 function getRandomColor() {
     const colors = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light'];
@@ -405,9 +517,130 @@ document.getElementById("hyst").addEventListener("click", () => {
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const eliminar = document.getElementById('eliminar_cuenta');
+
+    eliminar.addEventListener('click', function(e) {
+        e.preventDefault();
+        const myModal = new bootstrap.Modal(document.getElementById('eliminarModal'), {
+            keyboard: false
+        });
+        myModal.show();
+    });
+
+})
 
 
+document.getElementById("eli_botom").addEventListener("click",()=>{
 
+
+    
+    var ID_USUARIO = localStorage.getItem("id_usuario");
+    var array = {ID_USUARIO};
+    var jsn = JSON.stringify(array);
+
+
+    fetch("http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php",{
+
+        method:'DELETE',
+        body:jsn,
+        headers:{
+
+            'Content-Type':'application/json'
+        }
+
+
+    }).then((data)=>{
+
+        return data.json();
+
+    }).then((res)=>{
+
+        
+
+        var value = res.result;
+        console.log(value)
+
+        if(value === "Usuario eliminado correctamente!!!"){
+
+            window.alert("Usuario eliminado correctamente");
+            window.location.href = "../Templates/home.html";
+            
+        }else{
+
+            window.alert("Error, vuelve a intentarlo");
+        }
+
+    })
+
+
+})
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const publicar = document.getElementById('publicar_producto');
+
+    publicar.addEventListener('click', function(e) {
+        e.preventDefault();
+        const myModal = new bootstrap.Modal(document.getElementById('publicarModal'), {
+            keyboard: false
+        });
+        myModal.show();
+    });
+
+})
+
+document.getElementById("publi_botom").addEventListener("click",()=>{
+
+
+    
+    
+    var NOMBRE_PRODUCTO = document.getElementById("nombre_producto").value;
+    var REFERENCIA = document.getElementById("referencia_producto").value;
+    var PRECIO = document.getElementById("precio_producto").value;
+    var PESO = document.getElementById("peso_producto").value;
+    var CATEGORIA = document.getElementById("categoria_producto").value;
+    var STOCK = document.getElementById("stock_producto").value;
+
+    var array = {NOMBRE_PRODUCTO,REFERENCIA,PRECIO,PESO,CATEGORIA,STOCK};
+    var jsn = JSON.stringify(array);
+
+
+    fetch("http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php",{
+
+        method:'POST',
+        body:jsn,
+        headers:{
+
+            'Content-Type':'application/json'
+        }
+
+
+    }).then((data)=>{
+
+        return data.json();
+
+    }).then((res)=>{
+
+        
+
+        var value = res.result;
+        console.log(value)
+
+        if(value === "Producto, guardado correctamente!!!"){
+
+            window.alert("El producto fue publicado exitosamente");
+            window.location.href = "../Templates/mainMenu.html";
+            
+        }else{
+
+            window.alert("Por favor, rellena todos los espacios");
+        }
+
+    })
+
+
+})
 
 
 

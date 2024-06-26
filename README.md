@@ -63,6 +63,15 @@ ___________________________________________________________________
           
 **NOTA:** Para ejecutar correctamente la app web y que los endpoints consumidos en dicha vista, no te causen inconvenientes, 
 deberas renombrar el proyecto clonado, a el nombre de "prueba_tecnica_juanCastro" ; 
+
+De modo que el endpoint pasaria de esto: 
+
+http://localhost/GESTOR_PRODUCTOS/Controllers/productsController.php
+
+A esto:
+
+ http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
+
 ______________________________________________________________________________________________________
 
 ## FASE 1: CLONACION Y ADECUACION DE LOS DIRECTORIOS DEL REPOSITORIO ##

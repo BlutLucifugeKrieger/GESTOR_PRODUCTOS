@@ -316,3 +316,8 @@ ________________________________________________________________________________
 ### VIDEO INSTALACION Y CONFIGURACION DEL REPOSITORIO ###
 
 https://drive.google.com/file/d/1eaZI4GHPcKf2bvN33bxZdGquZVO5Nwdm/view?usp=sharing
+
+
+### SCRIPT SQL ###
+
+https://www.dropbox.com/scl/fi/8h5l1c2kdvg7j2a0ptfus/pt_php_script_camilo.sql?rlkey=unmzzrxqyvvfecim4hdccqysl&st=643udu2v&dl=0

@@ -69,13 +69,16 @@ En segundo lugar, tendras que abrir el proyecto usando un IDE, en mi caso recomi
 _____________________________________________________________________________________________________
 ## FASE 3: CONFIGURAR LA CONEXION A LA BASE DE DATOS
 
-En tercer lugar, se debera de configurar la conexion a la base de datos y a su vez, crear la base de datos y las tablas necesarias.
+En tercer lugar, se debera crear la base de datos (MySQL), una vez ya la hayas creado, tendras que ejecutar el script que esta en anexos
+del presente repositorio, con ello, podras crear las tablas necesarias para la ejecucion del proyecto.
 
-Para ello, te deberas situar en la carpeta "Config" y deberas acceder al archivo "Config.php":
+Finalmente, cuando ya realices la creacion de la base de datos y las tablas, tendras que configurar la conexion a la base de datos.
+
+Para ello, tendras que abrir el proyecto con un IDE y te deberas situar en la carpeta "Config" y acceder al archivo "Config.php":
 
 ![image](https://github.com/user-attachments/assets/5ea143ab-8e42-415f-a760-cf6fc1ef42b9)
 
-En este punto, deberas reemplazar las etiquetas "<server name>", "<user>","<pass>","<dbname>".
+En este punto, se reemplazaran las etiquetas "<server name>", "<user>","<pass>","<dbname>" con las credenciales de acceso a tu servidor MySQL apuntando a la base de datos de interes.
 
 Ejemplo: $connection = new mysqli('localhost','root','1234','gestor_db');
 

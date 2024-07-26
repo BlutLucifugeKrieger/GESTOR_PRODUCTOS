@@ -80,6 +80,11 @@ Para ello, tendras que abrir el proyecto con un IDE y te deberas situar en la ca
 
 En este punto, se reemplazaran las etiquetas "servername, user, pass, dbname" con las credenciales de acceso a tu servidor MySQL apuntando a la base de datos de interes.
 
+**servername :** localhost
+**user :** root
+**pass :** 1234
+**dbname :** gestor_db
+
 Ejemplo: $connection = new mysqli('localhost','root','1234','gestor_db');
 
 _____________________________________________________________________________________________________

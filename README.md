@@ -41,7 +41,7 @@ ______________________________________________________________
 
 * Identificar los requerimietos funcionales.
 * Trazar un plan de diseño (patrones de diseño como MVC).
-* Definir tiempos estimados para el desarrollo (Aprox 1 dia).
+* Definir tiempos estimados para el desarrollo.
 * Diseñar la API usando PHP version 8.2.13.  (puro sin frameworks).
 * Diseñar la vista web usando HTML,CSS y Javascript (puro sin frameworks).
 * Realizar validaciones a la API.
@@ -67,10 +67,22 @@ ________________________________________________________________________________
   
 En segundo lugar, tendras que abrir el proyecto usando un IDE, en mi caso recomiento Visual Studio Code.
 _____________________________________________________________________________________________________
+## FASE 3: CONFIGURAR LA CONEXION A LA BASE DE DATOS
 
-## FASE 3: EJECUCION DE LA API DESARROLLADA EN PHP ##
+En tercer lugar, se debera de configurar la conexion a la base de datos y a su vez, crear la base de datos y las tablas necesarias.
 
-En tercer lugar, tienes que lanzar tu servidor local ya sea atraves de XAMP o WAMPSERVER, una vez lo hayas hecho, 
+Para ello, te deberas situar en la carpeta "Config" y deberas acceder al archivo "Config.php":
+
+![image](https://github.com/user-attachments/assets/5ea143ab-8e42-415f-a760-cf6fc1ef42b9)
+
+En este punto, deberas reemplazar las etiquetas "<server name>", "<user>","<pass>","<dbname>".
+
+Ejemplo: $connection = new mysqli('localhost','root','1234','gestor_db');
+
+_____________________________________________________________________________________________________
+## FASE 4: EJECUCION DE LA API DESARROLLADA EN PHP ##
+
+En cuarto lugar, tienes que lanzar tu servidor local ya sea atraves de XAMP o WAMPSERVER, una vez lo hayas hecho, 
 te dirijiras a la ruta o PATH del repositorio que clonaste.
 
 En este punto, deberas dirigirte a la seccion o directorio de Controllers , en esta parte, abrirar los tres archivos .php que se encuentran en la carpeta.
@@ -78,7 +90,7 @@ En este punto, deberas dirigirte a la seccion o directorio de Controllers , en e
 de este modo tendras acceso a cada uno de los endpoints.
 ______________________________________________________________________________________________________                                           
  
- ## FASE 4: IDENTIFICACION DE LOS ENDPOINTS ##
+ ## FASE 5: IDENTIFICACION DE LOS ENDPOINTS ##
 
   En mi caso en particular, los endpoits quedaron de la siguiente manera:
   

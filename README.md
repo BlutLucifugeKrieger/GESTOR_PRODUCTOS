@@ -78,7 +78,7 @@ Para ello, tendras que abrir el proyecto con un IDE y te deberas situar en la ca
 
 ![image](https://github.com/user-attachments/assets/5ea143ab-8e42-415f-a760-cf6fc1ef42b9)
 
-En este punto, se reemplazaran las etiquetas <server name>,<user>,<pass>,<dbname> con las credenciales de acceso a tu servidor MySQL apuntando a la base de datos de interes.
+En este punto, se reemplazaran las etiquetas "<server name>,<user>,<pass>,<dbname>" con las credenciales de acceso a tu servidor MySQL apuntando a la base de datos de interes.
 
 Ejemplo: $connection = new mysqli('localhost','root','1234','gestor_db');
 

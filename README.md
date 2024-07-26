@@ -55,18 +55,6 @@ ______________________________________________________________
 ___________________________________________________________________
 
 ## Instalacion y configuracion del respositorio ##
-          
- 
-EJEMPLO: 
-
-De modo que el endpoint pasaria de esto: 
-
-http://localhost/GESTOR_PRODUCTOS/Controllers/productsController.php
-
-A esto:
-
- http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
-
 ______________________________________________________________________________________________________
 
 ## FASE 1: CLONACION Y ADECUACION DE LOS DIRECTORIOS DEL REPOSITORIO ##

@@ -316,9 +316,10 @@ ________________________________________________________________________________
   1. Primero -> Podras actualizar tu cuenta mediante unos inputs.
      
   2. Podras ver tu cartera, de este modo podras estar al tanto de cuanto dinero tienes, para comprar productos
-     (Ojo las cantidades de dinero, no se suman, pido perdon, pero no alcance a disponer de todo el tiempo que hubiera querido).
+   
   3. Podras desconectarte de tu cuenta.
-  4. Podras ver el historial de tus compras.
+     
+  5. Podras ver el historial de tus compras.
  
 _______________________________________________________________________________________________________________________________
 ______________________________________________________________________________________________________________________________

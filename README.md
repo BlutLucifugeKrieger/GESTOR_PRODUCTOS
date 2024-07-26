@@ -89,7 +89,7 @@ _____________________________________________________________________________
   ______________________________________________________________________________
   **Todos los productos: (GET)** -
   
-  http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
+  http://localhost/GESTOR_PRODUCTOS/Controllers/productsController.php
   
   
   _______________________________________________________________________________
@@ -97,7 +97,7 @@ _____________________________________________________________________________
   **Actualizar un producto: (PUT)** -
 
 
-  http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
+  http://localhost/GESTOR_PRODUCTOS/Controllers/productsController.php
 
  **Body**
 
@@ -117,7 +117,7 @@ _____________________________________________________________________________
   **Comprar un producto: (POST)**  -
 
 
-  http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
+  http://localhost/GESTOR_PRODUCTOS/Controllers/boughtItemsController.php
   
 
 **Body**
@@ -140,7 +140,7 @@ _____________________________________________________________________________
   **Eliminar un producto: (DELETE)** -
 
 
-   http://localhost/prueba_tecnica_juanCastro/Controllers/productsController.php
+   http://localhost/GESTOR_PRODUCTOS/Controllers/productsController.php
 
  **Body**
 
@@ -156,13 +156,13 @@ ________________________________________________________________________________
 
   **Todos los usuarios:(GET)** - 
   
-  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
+  http://localhost/GESTOR_PRODUCTOS/Controllers/usersController.php
   
   _____________________________________________________________________________
   
   **Nuevo usuario: (POST)** - 
   
-  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
+  http://localhost/GESTOR_PRODUCTOS/Controllers/usersController.php
 
   **Body**
 
@@ -176,7 +176,7 @@ ________________________________________________________________________________
   
   **Actualizar un usuario: (PUT)** - 
   
-  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
+  http://localhost/GESTOR_PRODUCTOS/Controllers/usersController.php
 
  **Body**
   
@@ -193,7 +193,7 @@ ________________________________________________________________________________
   
   **Eliminar un usuario: (DELETE)** - 
   
-  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php
+  http://localhost/GESTOR_PRODUCTOS/Controllers/usersController.php
 
    **Body**
   
@@ -208,7 +208,7 @@ ________________________________________________________________________________
   **Inicio de sesion: (POST)** - 
 
   
-  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/userLogin
+  http://localhost/GESTOR_PRODUCTOS/Controllers/usersController.php/userLogin
 
   **Body**
   
@@ -224,14 +224,14 @@ ________________________________________________________________________________
   **Todos los productos comprados por los usuarios:(GET)** - 
   
   
-  http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php
+  http://localhost/GESTOR_PRODUCTOS/Controllers/boughtItemsController.php
 
 ___________________________________________________________________________________
 
   **Actualizar dinero: (POST)** - 
   
   
-  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/money
+  http://localhost/GESTOR_PRODUCTOS/Controllers/usersController.php/money
 
   **Body**
 
@@ -245,7 +245,7 @@ ________________________________________________________________________________
 __________________________________________________________________________________
   **Dinero actual: (POST)** - 
   
-  http://localhost/prueba_tecnica_juanCastro/Controllers/usersController.php/money
+  http://localhost/GESTOR_PRODUCTOS/Controllers/usersController.php/money
 
  **Body**
 
@@ -260,7 +260,7 @@ ________________________________________________________________________________
   
   **Busqueda de usuario por ID: (POST)** - 
   
-  http://localhost/prueba_tecnica_juanCastro/Controllers/boughtItemsController.php/allFromID
+  http://localhost/GESTOR_PRODUCTOS/Controllers/boughtItemsController.php/allFromID
 
 
    **Body**
